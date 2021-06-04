@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradip's Gym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+           background: url(https://image.shutterstock.com/image-photo/shirtless-man-flipping-heavy-tire-1000w-713015449.jpg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-size: cover;
+            color: white;
+        }
+        .header{
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+         #left{
+             display: inline-block;
+             position: absolute;
+             top: 20px;
+         }
+         img{
+             height: 40px;
+             filter: invert(100%);
+         }
+         .batch{
+             width: 300px;
+             position: absolute;
+             top: 5px;
+             left: 45px;
+             font-size: 25px;
+         }
+         #right{
+             display: inline-block;
+             position: absolute;
+             top: 37px;
+             right: 0px;
+         }
+         #search{
+             border-radius: 10px;
+             width: 150px;
+             padding: 3px 7px;
+         }
+         #mid{
+            display:block;
+            width: 600px;
+            position: absolute;
+            top: 10px;
+            left: 400px;
+            font-style: oblique;
+            
+         }
+        li {
+               float: left;
+               list-style: none;
+              margin: 20px ;
+
+         }
+         li a{
+             text-decoration: none;
+             color: white;
+             font-size: 20px;
+         }
+         #mid a:hover{
+             text-decoration: underline;
+             cursor: pointer;
+             color: rgb(202, 90, 105);
+         }
+         .midbar{
+             margin: 0px 10px;
+         }
+         .form{
+             border: 4px solid red;
+             margin: 200px 50px ;
+             height: 400px;
+             width: 500px;
+         }
+         .form h2{
+             text-align: center;
+             color:white;
+             font-size: 40px;
+             font-family: cursive;
+             margin-top: 20px;
+           
+         }
+         .enter{
+             margin: 20px;
+             margin-left:120px;
+         }
+        .enter input{
+            height: 30px;
+            width: 250px;
+            border-radius: 30px;
+            padding: 5px 20px;
+            font-size: 17px;
+            font-family: cursive;
+        }
+        .btn{
+            width: 100px;
+            margin-left: 200px;
+            height: 25px;
+            border-radius: 5px;
+            
+        }
+        .lists{
+            border: 2px solid red;
+            display: inline-block;
+            width: 30%;
+            position: absolute;
+            top: 225px;
+            right: 50px;
+            border-radius: 15px;
+        }
+        .lists h2{
+            text-align: center;
+            font-size: 30px;
+            font-family: cursive;
+            background-color: rgb(66, 66, 219);
+        }
+        .lists li{
+            font-size: 20px;
+            margin: 10px;
+            font-weight: 500;
+            font-family:'Dancing Script', cursive; 
+        }
+        </style>
+</head>
+<body>
+   <header class="header" >
+       <div class="head" id="left">
+           <img src="https://www.svgrepo.com/show/29700/exercise.svg" alt="">
+           <div class="batch">Pradip's Fitness Centre</div>
+       </div>
+       <div class="head" id="mid">
+           <ol class="midbar">
+               <li><a href="">Home</a></li>
+               <li><a href="">Fitness modules</a></li>
+               <li><a href="">About us</a></li>
+               <li><a href="">Contact us</a></li>
+           </ol>
+       </div>
+       <div class="head" id="right">
+          <input type="text" name="search" id="search"
+          placeholder="Search about trainigs">
+       </div>
+   </header>
+   <div >
+       <div class="form">
+       <h2>Best gym in Kolkata</h2>
+       <form action="noaction.php">
+           <div class="enter">
+               <input type="text" placeholder="Enter your name">
+           </div>
+           <div class="enter">
+               <input type="text" placeholder="Enter your age">
+           </div>
+           <div class="enter">
+               <input type="text" placeholder="Enter your gender">
+           </div>
+           <div class="enter">
+               <input type="text" placeholder="Enter your locality">
+           </div>
+       </form>
+       <button class="btn">Submit now</button>
+       </div>
+       <div class="lists">
+           <h2>Our Management</h2>
+           <ol type="1">
+               <li>*We have the all modern equipments.</li>
+               <li>*We give every people a perfect trainer for them.</li>
+               <li>*We will provide Before and after food of gym.</li>
+               <li>*And suppliments are also avalaible. </li>
+               <li>*Monthly fee 5000 rs.</li>
+           </ol>
+       </div>
+   </div>
+</body>
+</html>
